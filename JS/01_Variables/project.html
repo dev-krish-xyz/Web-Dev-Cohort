@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Quantity Project</title>
+    <style>
+      button {
+        border: none;
+        padding: 10px;
+        gap: 20px;
+        margin-top: 200px;
+      }
+      div {
+        margin-left: 500px;
+      }
+      .cq {
+        color: white;
+        background-color: rgb(215, 140, 0);
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .add {
+        color: white;
+        background-color: rgb(10, 173, 10);
+        border-radius: 5px;
+      }
+      .plus {
+        color: white;
+        background-color: lightseagreen;
+        border-radius: 5px;
+      }
+      .reset {
+        color: white;
+        background-color: rgb(226, 76, 76);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button
+        class="cq"
+        onclick="console.log(`Cart Quantity: ${cartQuantity}`)"
+      >
+        Show Cart Quanty
+      </button>
+
+      <button
+        class="add"
+        onclick="cartQuantity++;
+      console.log(`Cart Quantity: ${cartQuantity}` );"
+      >
+        Add to cart
+      </button>
+
+      <button
+        class="plus"
+        onclick="
+      cartQuantity += 2;
+      console.log(`Cart Quantity: ${cartQuantity}`);"
+      >
+        +2
+      </button>
+
+      <button class="plus" onclick="
+      cartQuantity += 5;
+      console.log(`Cart Quantity: ${cartQuantity}`);">+5</button>
+      
+      <button class="reset" onclick="
+      cartQuantity = 0; 
+      console.log(`Cart Quantity: ${cartQuantity}`);">Reset</button>
+    </div>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+arrays: primitive data type and supports sequential memory allocation
+objects: key value pair
+
+memory type used for storing objects and arrays: STACK & HEAP
+STACK: 
+1. variables and their values are stored in the stack
+2. any new variable declared is pushed in to the stack
+3. when the variable goes out of the scope then the stack pops out that variable
+4. values whose size are fixed will stroed in the stack
+5. stack cant grow dinamically like arrays thats why we use HEAP
+
+HEAP:
+1. objects, arrays, graph and trees are stored in HEAP since they grow dinamically.
+2. let p1 = 'ayush'
+   let p2 = p1
+
+here the adress of p1 stored in p2 which will point the real value in the heap 
+
+
+// GARBAGE COLLECTOR: 
+1. It cleares the allocated memory when a variable goes out of the scope in a perticular language. 
+2. JS has its own in-built GARBAGE COLLECTOR. 
+3. if there is no in-buit GARBAGE COLLECTOR in the language then you have to deallocate the memory manually.
+
+// MEMORY LEAK:
+1. if garbage collector is not built-in in the language then sometimes if there is 2 variable pointing to the same location in the heap , someone deleted one variable and its pointing value in the heap, the second variable can point to a another value having the same adress as the first variable. this situation is called memory leak.
+
+// Serialization : converting objects in to string by using JSON
+// Deserialization: converting strings in to objects by using JSON

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid website</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        background-color: rgb(181, 187, 235);
+        height: 95vh;
+        width: 80vw;
+        margin: 100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+    .box{
+        height: 100px;
+        width: 180px;
+        background-color: rgb(254, 254, 255);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 130px 3px rgba(30, 83, 182, 0.855);
+    }
+    .box2{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+   .head{
+    margin-left: 60px;
+    margin-top: 5px;
+   }
+   .hea{
+    margin-left: 45px;
+    margin-top: 10px;
+   }
+   .btn{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 25px;
+   }
+   .bt1{
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    background-color:rgb(50, 79, 221) ;
+    color: white;
+   }
+   .bt2{
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    background-color:rgb(28, 202, 48) ;
+    color: white;
+   }
+   .bt1:hover{
+    background-color: rgb(9, 34, 220);
+   }
+   .bt2:hover{
+    background-color: rgb(15, 168, 15);
+   }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="box box1">
+            <h4 class="head">English</h4>
+            <div class="btn">
+            <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box box2">
+            <h4 class="head">Odia</h4>
+            <h5 class="hea">this is odia</h5>
+            <div class="btn"> 
+            <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box box3">
+            <h4 class="head">Hindi</h4>
+            <h5 class="hea">this is hindi </h5>
+            <div class="btn">
+            <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box box4">
+            <h4 class="head">Dutch</h4>
+            <h5 class="hea">this is Dutch</h5>
+            <div class="btn">
+             <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box box5">
+            <h4 class="head">Bangali</h4>
+            <h5 class="hea">this is bangali</h5>
+            <div class="btn">
+             <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box box6">
+            <h4 class="head">Marathi</h4>
+            <h5 class="hea">this is Marathi</h5>
+            <div class="btn">
+             <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box box7">
+             <h4 class="head">Spanish</h4>
+             <h5 class="hea">this is spanish</h5>
+             <div class="btn">
+             <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+             </div>
+        </div>
+        <div class="box box8">
+             <h4 class="head">French</h4>
+             <h5 class="hea">this is french</h5>
+             <div class="btn">
+             <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+             </div>
+        </div>
+        <div class="box box9">
+             <h4 class="head">Turkish</h4>
+             <h5 class="hea">this is Turkish</h5>
+             <div class="btn">
+             <button class="bt1" type="submit">Download 32-bit</button>
+            <button class="bt2" type="submit" >Download 64-bit</button>
+            </div>
+    </div>
+  </body>
+</html>

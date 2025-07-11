@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header-container flex">
+        <div class="header">
+          <h1>Guess My Number!</h1>
+          <h5>(between 1 and 20)</h5>
+        </div>
+      </div>
+
+      <div class="secret-container">
+        <div class="line"></div>
+        <div class="secret-box flex">?</div>
+      </div>
+
+      <div class="input-container flex">
+        <div class="input-container">
+          <input type="number" class="input-box" placeholder="Number"/>
+        </div>
+        <div class="message">Start guessing...</div>
+      </div>
+
+      <div class="bottom-container flex">
+        <div class="check-container"><button class="check-btn">Check!</button></div>
+        <div class="score-container flex">
+          <div class="score">Score: 20</div>
+          <div class="highscore">highscore: 0</div>
+        </div>
+        <div class="again-container"><button class="again-btn"> Try Again!</button></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

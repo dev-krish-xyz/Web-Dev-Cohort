@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+    body{
+        background:#2a2a2a;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 350px;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .card{
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 30px;
+        width: 350px;  
+    }
+    h2{
+        color:rgb(9, 9, 131) ;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    form{
+        flex-direction: column;
+        display: flex;
+    }
+    input{
+        border-radius: 3px;
+        padding: 7px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
+    .submit{
+        border-radius: 7px;
+        padding: 5px;
+        width: 200px;
+        margin-left: 75px;
+        background-color: hsl(244, 81%, 64%);
+        color: white;
+    }
+    .submit:hover{
+        background-color: #160b8f;
+    }
+    .sign:hover{
+        background-color: rgb(107, 231, 121);
+    }
+    .sign{
+        border-radius: 7px;
+        padding: 1px;
+        width:100px ;
+        margin-bottom: 10px;
+        margin-left: 125px;
+        margin-top: 10px;
+        border-style:hidden
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+    <h2>Login</h2>
+    <form>
+        <input type="text" name="Username" placeholder="Username">
+        <input type="password" name="Password" placeholder="Password">
+        <button class="submit" type="submit">Submit</button>
+        <button class="sign" type="button">Signup</button>
+    </form>
+        
+    </div>
+  </body>
+</html>

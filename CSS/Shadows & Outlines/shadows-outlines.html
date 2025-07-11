@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows & Outlines</title>
+    <style>
+      .box-shadow {
+        background-color: palevioletred;
+        border: 1px solid black;
+        padding: 20px;
+        height: 50px;
+        margin-bottom: 30px;
+        box-shadow: 5px 5px 15px 5px #888888;
+        /* x-offset y-offset blur spread color  */
+      }
+      .text-shadow {
+        background-color: rgb(250, 241, 224);
+        border: 2px solid black;
+        margin-bottom: 40px;
+        padding: 20px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-shadow: 7px 7px 10px #000;
+        /* x-offset y-offset blur color */
+      }
+      .outlines{
+        background-color: greenyellow;
+        color: black;
+        padding: 20px;
+        border: dotted rgb(38, 36, 36);
+        outline: 3px solid rgb(2, 138, 36);
+        outline-offset: 10px;
+        /* width style color  */
+      }
+    </style>
+  </head>
+  <div class="box-shadow">BOX Shadow</div>
+  <div class="text-shadow">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, rem!
+    Laborum minima fugiat est deleniti ex, ratione necessitatibus, atque illum
+    qui possimus dicta. Lorem ipsum dolor, sit amet consectetur adipisicing
+    elit. Nesciunt nisi distinctio numquam earum consectetur eius, similique
+    tenetur ipsam voluptatum eligendi soluta ratione, fuga et dicta velit? Ipsa
+    ab necessitatibus sed vel excepturi dolor molestias, non itaque ullam
+    asperiores vitae voluptas ipsum veritatis quia labore explicabo cumque,
+    harum autem laboriosam.
+  </div>
+  <div class="outlines">this is a container with some outlines</div>
+  <body></body>
+</html>

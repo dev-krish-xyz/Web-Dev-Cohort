@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variables</title>
+    <style>
+        :root{
+           --color:rgb(19, 27, 83);
+           --seccolor:rgb(160, 170, 239);
+           --btncolor: rgb(100, 233, 184);
+           --defpad: 5px;
+            --defop: 0.7;
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            /* background-color: teal; */
+            display: flex;
+            background-color: var(--color);
+        }
+        .conlist{
+            display: flex;
+            padding: 10px;
+        }
+        .conlist li{
+        color: var(--btncolor);
+        padding: 10px;
+        list-style-type: none;
+        }
+        .para{
+            /* background-color: rgb(141, 224, 224); */
+            background-color: var(--seccolor);
+            padding: 5px;
+        }
+        .para2{
+            margin-top: 10px;
+            background-color: var(--btncolor);
+            padding: var(--defpad);
+            opacity: var(--defop);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <ul class="conlist">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+        </div>
+        <div class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, tempore porro. Rerum distinctio ratione perferendis accusamus sit excepturi nisi tempora quos libero pariatur obcaecati veniam impedit possimus odit, id in vel, iste officia harum dolores. Dolore obcaecati nulla perspiciatis totam repudiandae nostrum, impedit fugiat magni!
+        </div>
+        <div class="para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, aspernatur. Asperiores neque suscipit illum, optio saepe officia illo porro perferendis ipsum modi accusamus.
+        </div>
+  </body>
+</html>

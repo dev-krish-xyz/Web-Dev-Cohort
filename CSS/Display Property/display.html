@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .box1{
+            background-color: skyblue;
+            border: 2px solid black;
+            display: none;
+        }
+        .box2{
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .box3{
+            display: inline;
+            background-color: blueviolet;
+            border: 2px solid black;
+            padding: 5px;
+            /* width: 20px; width won't be applied due to inline property */
+            /* height: 200px; height won't be applied due to inline property */
+        }
+        .box4{
+            display: inline-block;
+            justify-content: center;
+            background-color: chartreuse;
+            border: 2px solid black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            height: 100px;
+            width: 300px;
+            margin-left: 20px;
+            color: black;
+        }
+        .box5{
+            display: block;
+            background-color: palevioletred;
+            border: 2px solid black;
+            height: 100px;
+            /* width: 400px; */
+            padding: 20px;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+        box1: Display:none
+    </div>
+    <div class="box2">
+        box2: display: flex
+    </div>
+    <div class="box3">
+        box3: display: inline  -  
+        width and height won't be applied
+    </div>
+    <div class="box4">
+        box4: display: inline-block
+        width and height will be applied
+    </div>
+    <div class="box5">
+         box5: display: block
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+1. Array.prototype : parent class which contains all the inbuilt functions
+let arr = [1,3,4,];
+2. arr.__proto__ : inherits all the properties of prototype of parent Array class
+-> Array.prototype.extra = function (){
+    console.log('chai');
+}
+
+this will create a extra function inside the prototype and we can access through the newly defined array

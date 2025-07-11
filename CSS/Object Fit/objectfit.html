@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Fit</title>
+    <style>
+        .container{
+            background-color: lightgrey;
+            height: 400px;
+            width: 500px;
+            border: 2px solid black;
+            background-image: url("https://as1.ftcdn.net/v2/jpg/06/05/11/12/1000_F_605111295_QyQY4Tk7bv8789bFA0TgGKeTM4zzowdo.jpg");
+            background-position: center center;
+            background-clip: border-box;
+
+        }
+        img{
+            height: 200px;
+            width: 150px;
+            object-fit: cover;
+            /* object-fit: contain; */
+            object-position: top right;
+            background-repeat: no-repeat;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <img
+          src="https://as1.ftcdn.net/v2/jpg/06/05/11/12/1000_F_605111295_QyQY4Tk7bv8789bFA0TgGKeTM4zzowdo.jpg"
+          alt=""
+        />
+    </div>
+  </body>
+</html>

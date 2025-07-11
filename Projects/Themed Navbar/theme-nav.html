@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Themed Navigation Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        /* :root{
+            --bgcolor:rgb(164, 164, 241);
+            --textcolor:black;
+            --btnbg:white;
+            --hovercolor:white;
+            --hoverbg:rgb(114, 87, 223);
+        } */
+         /* :root{
+            --bgcolor:rgb(157, 237, 197);
+            --textcolor:black;
+            --btnbg:white;
+            --hovercolor:white;
+            --hoverbg:rgb(32, 170, 124);
+         } */
+          :root{
+            --bgcolor:rgb(180, 180, 195);
+            --textcolor:black;
+            --btnbg:white;
+            --hovercolor:white;
+            --hoverbg:rgb(100, 99, 107);
+          }
+         
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 35px;
+        width: 100vw;
+        background-color: var(--bgcolor);
+      }
+      .conlist {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+      }
+      .conlist li {
+        margin-top: 8px;
+        font-size: 10px;
+        font-family: 'poppins';  
+      }
+      .btn{
+        margin-top: 6px;
+        border: none;
+        padding: 4px;
+        border-radius: 10px;
+        font-size: 12px;
+      }
+      .btn:hover{
+        background-color: var(--hoverbg);
+        color: var(--hovercolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="conlist">
+        <li class="list">Home</li>
+        <li>About</li>
+        <li>Submit</li>
+        <button class="btn" type="submit">signup</button>
+      </ul>
+    </div>
+  </body>
+</html>

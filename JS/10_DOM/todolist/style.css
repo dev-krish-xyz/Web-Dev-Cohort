@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2471ff;
+  --light-gradient: #6eb5fb;
+  --lighter-blue: #b6d8f9e0;
+  --golden-color: rgba(239, 203, 2, 0.807);
+  --field-color: rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  text-align: center;
+  font-family: "poppins";
+  position: relative;
+  background-color: grey;
+}
+
+.main h2 {
+  padding: 0.6vw;
+  color: rgba(255, 255, 255, 0.941);
+}
+
+.header-container {
+  background: linear-gradient(
+    to right,
+    var(--light-gradient),
+    var(--primary-color)
+  );
+  border-radius: 35px;
+  box-shadow: 0px 4px 6px rgba(16, 16, 16, 0.352);
+  /* border: .1px solid rgba(0, 0, 0, 0.258); */
+  position: inherit;
+  width: 85%;
+  margin: auto;
+  top: 20px;
+}
+
+.app-container {
+  background-color: white;
+  width: 40vw;
+  margin-left: calc(100vw - 60vw);
+  height: 100vh;
+  box-shadow: 0.1px 0.1px 18px black;
+  margin: auto;
+  border-radius: 30px;
+  position: relative;
+}
+
+.input-container {
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-input {
+  border-radius: 50px;
+  padding: 0.7vw;
+  font-size: 1.5vw;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 0.55px solid rgba(0, 0, 0, 0.2);
+}
+
+#todo-input:hover {
+  transform: scale(1.05);
+  transition: transform ease-in-out 0.3s;
+}
+
+#add-btn {
+  margin-left: 1vw;
+  padding: 0.5vw 1.5vw;
+  font-size: 2vw;
+  font-weight: bolder;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to right,
+    var(--light-gradient),
+    var(--primary-color)
+  );
+  color: white;
+}
+
+#add-btn:hover {
+  transform: scale(1.05);
+  transition: transform ease-in 0.2s;
+}
+
+#acbtn {
+  margin-left: 1vw;
+  padding: 0.75vw 1vw;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to right,
+    rgba(255, 167, 4, 0.826),
+    rgba(255, 0, 0, 0.841)
+  );
+  color: white;
+}
+
+.count-container{
+  height: 6%;
+  width: 80%;
+  background: repeating-linear-gradient(to right, var(--lighter-blue),rgba(128, 128, 128, 0.244), rgba(249, 213, 147, 0.384));
+  margin: auto;
+  margin-top: 1vw;
+  border-radius: 5px;
+  border:rgba(0, 0, 0, 0.1) dashed;
+  color: white;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+#left-box {
+  height: 100%;
+  width: 48%;
+  align-content: center;
+  color: rgba(0, 0, 0, 0.718);
+  font-size: .8rem;
+}
+#right-box{
+  height:100% ;
+  width: 50%;
+}
+
+.list-container {
+  margin-top: 1.5vw;
+}
+
+#item-container {
+  width: 80%;
+  margin: auto;
+  list-style-position: outside;
+  text-align: start;
+  list-style-type: disc;
+}
+
+.all-list-style {
+  margin-top: 1vw;
+  background-color: rgba(219, 219, 219, 0.5);
+  /* background-color: rgba(160, 245, 160, 0.882); */
+  border-radius: 10px;
+  box-shadow: 10px, 14px, 6px, rgba(0, 0, 0, 0.8);
+  padding: 0.5vw;
+  padding-left: 1.2vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: disc;
+}
+
+.task-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: nowrap;
+}
+
+.delete-btn-style {
+  color: rgba(0, 0, 0, 0.563);
+  margin-right: 1.2vw;
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: inherit;
+  border: none;
+  background: none;
+}
+
+.check-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  color: black;
+  /* margin-right: 1.2vw; */
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  min-width: 15px;
+  min-height: 15px;
+  flex-shrink: 0;
+}
+
+.check-btn:checked {
+  background: white;
+}
+
+.check-btn:checked::after {
+  content: "✔";
+  color: black;
+  top: 0;
+  left: 2.5px;
+  bottom: 5px;
+  position: absolute;
+  font-size: 10px;
+  font-weight: bolder;
+  transition: 0.2s ease;
+}

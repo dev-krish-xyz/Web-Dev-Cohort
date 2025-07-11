@@ -1,0 +1,17 @@
+These are the inbuilt base classes in javascript: 
+✅ Summary Table
+Class	    Description
+------      -----------
+Object	    Base for all objects
+Function	Used to create functions
+Array	    Ordered collections
+String	    Text values
+Number	    Numeric values
+Boolean	    Logical true/false
+Date	    Dates and times
+RegExp	    Pattern matching
+Error	    Error objects
+Map, Set	Key-value and unique collections
+Promise	    Asynchronous computation
+Symbol	    Unique identifiers
+BigInt	    Large integers

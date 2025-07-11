@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: rgb(13, 127, 155);
+        height: 41px;
+        width: 100vw;
+        position:sticky;
+        z-index: 1;
+        top: 0px;
+        /* left: 3px; */
+      }
+      .conlist {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+        font-family: 'poppins';
+        font-size: 12px;
+        /* position: sticky; */
+      }
+      .btn{
+        padding: 4px;
+        border-radius: 12px;
+        border: none;
+        font-size: 12px;
+        margin: -2px;
+        width: 50px;
+      }
+      
+      .boxes{
+        height: 70vh;
+        width: 100vw;
+        background-color: rgb(161, 204, 215);
+        display: flex;
+        justify-content: space-around;
+      }
+      .box1{
+        height: 250px;
+        width: 360px;
+        border: 2px solid black;
+        background-color: white;
+        box-shadow: 5px 5px 30px 2px rgba(0, 0, 0, 0.351);
+        position: relative;
+        margin-top:30px;  
+      }
+      .box2{
+         height: 250px;
+        width: 360px;
+        border: 2px solid black;
+        background-color: white;
+        position: relative;
+        box-shadow: 5px 5px 30px 2px rgba(0, 0, 0, 0.351);
+        margin-top: 30px; 
+        margin-left: 20px; 
+      }
+      .para{
+        width: 70vw;
+        height: 200px;
+        background-color: #bfc3c4;
+        margin-left: 140px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 30px 2px #00000047;
+        border-radius: 30px;
+        text-overflow:hidden;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .foot{
+        height: 100px;
+        width: 100vw;
+        background-color: rgb(13, 145, 150);
+        /* padding: 30px; */
+        /* margin-left: 50px; */
+      }
+      .end{
+        margin-left: 45vw;
+        margin-top: 20px;
+        position: relative;
+        padding: 20px;
+      }
+      .circle{
+        height: 70px;
+        width: 70px;
+        background: yellow;
+        border: 1px solid black;
+        border-radius: 100%;
+        margin-left: 95vw;
+        position: fixed;
+        top: 70vh;
+        right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="conlist">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <button class="btn" type="submit">Login</button>
+      </ul>
+    </nav>
+    <main class="maincon">
+      <div class="boxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </div>
+      <div class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+        cupiditate est minima dignissimos quas. Molestias quo velit tempore ex
+        possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium provident corporis animi harum totam ratione quod quam dolor, consectetur veniam delectus fugit voluptatem eveniet? Officiis fugit delectus tempora reprehenderit.
+      </div>
+      <div class="circle"></div>
+    </main>
+    <footer class="foot">
+      <div class="end">@copyrights reserved</div>
+    </footer>
+  </body>
+</html>

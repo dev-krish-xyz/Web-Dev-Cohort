@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #1a1a1a; /* Dark background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .button-wrapper {
+        display: flex;
+        gap: 20px;
+      }
+
+      .btn {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 12px 28px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* White Glass Button */
+      .btn-glass {
+        background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+        color: #111;
+        border: 1px solid #dcdcdc;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+      }
+
+      /* Orange Gradient Button */
+      .btn-orange {
+        background: linear-gradient(to bottom, #ff7a00, #e85900);
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-wrapper">
+      <button class="btn btn-glass">Explore Offerings</button>
+      <button class="btn btn-orange">Buy Now</button>
+    </div>
+  </body>
+</html>

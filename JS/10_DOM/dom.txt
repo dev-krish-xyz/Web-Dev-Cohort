@@ -1,0 +1,6 @@
+DOM: Document Object Model, JavaScript can create, delete, or change elements and attributes using the DOM.Each HTML element is a node.
+
+Document: refers to the HTML structure
+Object: global window object which contains all the methods to use and perform some task in the browser window.
+
+DOM manipulation: refers to accessing the document objects to perform some task.

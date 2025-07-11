@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d7fa848e6a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="app-container">
+        <div class="header-container"><h2>Todo list</h2></div>
+        <div class="input-container">
+          <input id="todo-input" placeholder="enter the task" type="text" />
+          <button id="add-btn"><i class="fa-solid fa-plus"></i></button>
+          <button id="acbtn">Clear</button>
+        </div>
+        <div class="count-container">
+          <div id="left-box">
+            0/0 Tasks completed
+          </div>
+            <div class="line">|</div>
+            <div id="right-box"></div>
+        </div>
+        <div class="list-container">
+          <ul id="item-container"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

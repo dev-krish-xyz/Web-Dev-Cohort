@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Properties</title>
+    <style>
+      .parent {
+        border: 5px solid rgb(222, 72, 18);
+        margin: 10px;
+        position: relative;
+        /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+        /* transform: translate(0); */
+        /* filter: invert(0); */
+        /* perspective: 0em; */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 200px;
+        width: 70vw;
+        border: 2px solid black;
+        margin: 20px;
+        margin-left: 70px;
+        /* position: absolute; */
+      }
+      .box1 {
+        background-color: blueviolet;
+        /* position: relative; */
+        top: 0px;
+        left: 3px;
+        position: sticky;
+        z-index: 1;
+      }
+      .box2 {
+        background-color: teal;
+        position: fixed; 
+        height: 50px;
+      }
+      .box3 {
+        background-color: palevioletred;
+        position: relative;
+        top: 10px;
+        left: 30px;
+
+      }
+      .box4 {
+        background-color: aquamarine;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+      }
+      .dummy{
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1">box1: sticky</div>
+      <div class="box box2">box2: fixed</div>
+      <div class="box box3">box3: relative- relative to its normal position</div>
+      <div class="box box4">box4: absolute- relative to its closest ancestor postion</div>
+      <div class="box dummy">for scrolling</div>
+      <div class="box dummy">for scrolling</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+.main {
+  background-image: url("Images/mainbg.jpg.jpg");
+  background-size: max(1920px,100vw);
+  height: 35em;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.main .effectbox {
+  background-color: rgba(0, 0, 0, 0.82);
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  height: 100vh;
+  width: 100vw;
+  /* z-index: 1; */
+}
+nav img {
+  z-index: 10;
+  position: relative;
+}
+nav {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75vw;
+  margin: auto;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.navbar span {
+  margin-top: 24px;
+  position: relative;
+}
+.navbar .lang {
+  width: 80px;
+  padding: 5px 20px 5px 20px;
+  background: #00000074;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: 0.01px solid rgba(255, 255, 255, 0.463);
+}
+.navbar .signin {
+  background-color: red;
+  color: white;
+  padding: 7px 18px 7px 18px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.herotext {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.herotext > :nth-child(1) {
+  font-size: 56px;
+  font-weight: bolder;
+  margin-top: 120px;
+  line-height: 70px;
+}
+.herotext > :nth-child(2) {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.herotext > :nth-child(3) {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 60px;
+}
+.herobutton {
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 0;
+}
+.herobutton > :nth-child(1) {
+  padding: 1.8em 12em 1em 1.5em;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.497);
+  border: .01em solid #ffffff69;
+  border-radius: .25rem;
+}
+.herobutton > :nth-child(2) {
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  padding: .4em 1em;
+  font-size: 1.2em;
+  border-radius: .25rem;
+  border: none;
+  margin-left: 0.8em;
+}
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.816);
+}
+.separation{
+  height: .25em;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  margin-top: 5em;
+}
+.imggrid{
+  margin-left: 7em;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imggrid img{
+  border-radius: 1em;
+}
+
+
+/* @media only screen and () */
+@media only screen and (max-width: 590px) {
+  .herobutton{
+    flex-direction: column;
+     flex-wrap: wrap;
+     padding: 4em;
+     gap: 1em;
+  }
+  .herotext{
+    padding: 3em;
+  }
+}
+

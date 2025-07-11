@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Selecktors</title>
+    <style>
+        .boxes{
+            background-color: rgb(180, 233, 233); 
+        }
+        .box {
+            background-color: rgb(25, 146, 31);
+            height: 50px;
+            width: 60px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+        .boxes *{
+            background-color: rgb(226, 116, 116);
+        }
+        .box:first-child{
+            color: rgb(178, 208, 169);
+        }
+        .box::first-line{
+            color: teal;
+        }
+        .box:nth-child(odd){
+            color: white;
+        }
+    .box:nth-child(even){
+        color:black
+    }
+    ::selection{
+        background-color: white;
+        color: black;
+    }
+    .box::first-letter{
+        font-size: 30px;
+        color: rgb(85, 26, 174);
+    }
+    input::placeholder{
+        background-color: greenyellow;
+        color: black;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+        <div class="box">i am box 1</div>
+        <div class="box">i am box 2</div>
+        <div class="box">i am box 3</div>
+        
+
+        
+    </div>
+    <div><input type="text" placeholder="username">username</div>
+  </body>
+</html>

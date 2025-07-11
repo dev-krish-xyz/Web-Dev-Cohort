@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+        /* @media not|only mediatype and (expressions) { 
+            CSS-Code; */
+        @media  only screen and (max-width:455px) {
+            body{
+                background-color: rgb(233, 117, 233);
+    
+            }
+            .section{
+                flex-direction: column;
+            }
+        }
+        body{
+            background-color: rgb(235, 221, 202);
+        }
+        .media{
+            border: 2px solid black;
+            height: 100px;
+            width: 50vw;
+            display: flex;
+            background-color: olivedrab;
+            margin: 10px;
+        }
+        .section{
+            display: flex;
+        }
+    </style>
+  </head>
+  <body>
+    <div>I am a green guy</div>
+    <div class="section">
+    <div class="media"></div>
+    <div class="media"></div>
+    <div class="media"></div>
+</div>
+  </body>
+</html>

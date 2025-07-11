@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .container {
+        background-color: lightgreen;
+        height: 400px;
+        width: 600px;
+      }
+      .box {
+        height: 100px;
+        width: 150px;
+        background-color: darkgreen;
+        animation-name: animation1,animation2;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        /* animation-play-state: paused; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      }
+      @keyframes animation1 {
+        from {
+          background-color: green;
+        }
+        to {
+          transform: translateX(500px);
+          background-color: orange;
+        }
+      }
+      @keyframes animation2 {
+        0% {
+          transform: rotate(45deg);
+        }
+        20% {
+          transform: rotate(90deg);
+        }
+        40% {
+          transform: rotate(120deg);
+        }
+        60% {
+          transform: rotate(150deg);
+        }
+        80% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(200deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">BOX</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+    <script
+      src="https://kit.fontawesome.com/d7fa848e6a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main flex">
+      <div class="calculator-container">
+        <div class="display-container flex">
+          <div class="display-box">
+            <div class="display display-text"></div>
+          </div>
+          <div class="result"></div>
+        </div>
+        <div class="grid-container">
+          <button class="functions acbtn">AC</button>
+          <button class="functions delback">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button class="operators" data-value="/">/</button>
+          <button class="operators" data-value="*">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button class="number" data-value="7">7</button>
+          <button class="number" data-value="8">8</button>
+          <button class="number" data-value="9">9</button>
+          <button class="operators data-value" data-value="-">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button class="number" data-value="4">4</button>
+          <button class="number" data-value="5">5</button>
+          <button class="number" data-value="6">6</button>
+          <button class="operators data-value" data-value="+">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button class="number" data-value="1">1</button>
+          <button class="number" data-value="2">2</button>
+          <button class="number" data-value="3">3</button>
+          <button class="equal">=</button>
+          <button class="number">()</button>
+          <button class="number" data-value="0">0</button>
+          <button class="number" data-value="." style="font-weight: bolder">
+            .
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
