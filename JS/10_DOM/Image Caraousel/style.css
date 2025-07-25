@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+.carousel{
+    height: 100%;
+    width: 800px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* ensures that only one slide visible at a time */
+.carousel-track-container{
+    overflow:hidden;  
+}
+
+.carousel-track{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide{
+    min-width: 800px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.slide img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+button.prev, button.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.4);
+    /* background:none; */
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
