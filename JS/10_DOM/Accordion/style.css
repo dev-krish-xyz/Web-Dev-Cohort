@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.605);
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acc-container{
+    width: 500px;
+    height: 500px;
+    background:linear-gradient(to bottom, rgb(39, 128, 228), rgba(245, 245, 245, 0.822));
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 8px 32px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.header{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgba(245, 245, 245, 0.858);
+    padding: 2px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 16px 32px rgba(255, 255, 255, 0.126);
+    color: rgb(57, 57, 57);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.acc-wrapper {
+    height: 75%;
+    width: 90%;
+    display: flex;
+    justify-content: first baseline;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.accordions {
+    position: relative;
+    color: whitesmoke;
+    width: 80%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.589);
+    border-radius: 7px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 32px rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+}
+.accordions i {
+    height: 20px;
+    width: 13px;
+}
+.slider-container {
+    width: 80%;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    text-align:left;
+    padding: 0 10px;
+    border-radius: 3px;
+    user-select: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: transform 0.5s ease, padding 0.3s ease;
+}
+.slider-container.open {
+    max-height: 100px;
+    padding: 10px;
+}
+.slider-container.close {
+    min-width: 0px;
+    padding: 10px;
+}
+
+
+
+
+ 
