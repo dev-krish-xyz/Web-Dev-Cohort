@@ -10,12 +10,12 @@ const person = {
     vilage: "bpur",
   },
   married: false,
-  'clg type': 'autonomous' 
+  clgtype: 'autonomous' 
 };
 console.log(person.hobbies); // accessing the elements of the object
 console.log(person.adress.pincode);
 console.log(person.rollno);
-console.log(person['clg type']); 
+console.log(person['clgtype']); 
 
 
 
@@ -28,7 +28,9 @@ let p1 = {
     lname: 'chand'
 }
 let p2 = {
-    ...p1  // spreading of object p1 inside object p2 using spread operator
+    ...p1, // spreading of object p1 inside object p2 using spread operator
+    son: 'akash',
+    daughter: 'ankita'   // adding new key value pairs
 }  
 p2.fname = 'ramesh';
 p2.lname = 'mohapatra'

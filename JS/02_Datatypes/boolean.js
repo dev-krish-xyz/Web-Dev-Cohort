@@ -16,5 +16,16 @@ console.log(Boolean(23)); // non-zero number
 console.log(Boolean(Infinity)); // infinity value
 console.log(Boolean(function(){})); // defined function
 
+// function to check truthy or falsy values
 
+function checkType (value){
+    if(value){
+        console.log('Truthy value');
+    }
+    else {
+        console.log('Falsy value');
+    }
+}
+checkType('');
+checkType([]);
 

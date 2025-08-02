@@ -1,8 +1,9 @@
-let n = 20; // num data type
-let y = "kumar"; // string type
-let qs = true; // boolean type
-let nothing = null; // null type
-let undefin; // undefined type
+let n = 20; // Number data type
+let y = "kumar"; // String type
+let qs = true; // Boolean type
+let nothing = null; // Null type
+let undefin; // Undefined type
+let sym = Symbol(); // Symbol type
 
 // these are the userdefined data types called object
 let liquors = ["cofee", "chai", "drinks", 67, 35];
