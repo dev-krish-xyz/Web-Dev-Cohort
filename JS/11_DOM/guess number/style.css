@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgba(0, 0, 0, 0.853);
+  background-color: rgba(0, 0, 0, 0.9);
   transition: background-color 2s ease;
   color: white;
   font-family: "Press Start 2P";
@@ -14,21 +14,41 @@ body {
   height: 100%;
   /* overflow:hidden; */
 }
+.main {
+  height: 100%;
+  width: 100%;
+}
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header-container {
+  position: relative;
   margin-top: 3vw;
   width: 100%;
 }
-.header-container h5 {
+.header {
+  height: auto;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 10px 0;
+  gap: 1vw;
+  box-shadow: 0px 8px 32px rgba(255,255,255,0.1);
+  background-color: #60b346;
+}
+.header:first-child {
   text-align: center;
-  padding-top: 1.5vw;
+  font-size:2.5vw;
+  width: 80% ;
+}
+.subheader {
+  font-size: 1.7vw;
+  width: 70%;
 }
 
 .secret-container {
+  width: 100%;
   margin: 7vh 0;
   position: relative;
   height: 10vh;
@@ -36,37 +56,40 @@ body {
 .line {
   width: 100%;
   background-color: white;
-  height: 13px;
+  height: 0.813rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  overflow: hidden;
 }
 .secret-box {
-  height: 85px;
-  width: 100px;
+  height: 7rem;
+  width: 8rem;
   background-color: white;
   color: black;
   position: absolute;
   top: 50%;
-  left: 46%;
+  left: calc(50% - 3.2rem);
   transform: translateY(-50%);
   font-size: 2.5rem;
 }
 
 .input-container {
+  position: relative;
   margin: 20px 0;
-  gap: 30vw;
+  gap: 1vw;
+  justify-content: space-around;
 }
 .input-box {
-  height: 65px;
-  width: 110px;
+  height: 4.063rem;
+  width: 8rem;
   color: black;
-  font-size: 23px;
+  font-size: 1.438rem;
   font-family: "Press Start 2P";
   text-align: center;
 }
 .input-box::placeholder{
-  font-size: 15px;
+  font-size: 0.938rem;
   color: grey;
   padding-left: 8px;
   opacity: 1;
@@ -78,18 +101,30 @@ body {
 }
 
 .message {
-  width: 30vw;
-  height: 30px;
-  font-size: 15px;
+  text-align: center;
+  width:auto;
+  min-width:3rem;
+  height: 1rem;
+  font-size: 0.938rem;
+  background-color: #ffffff1d;
+  padding: 2vw;
+  border-radius: 5px;
+  line-height: 5vw;
 }
 
 .bottom-container {
+  width: 100%;
   justify-content: space-around;
-  margin: 2vw 0;
+  margin: 6vw 0;
   position: relative;
+  gap:3vw;
+  /* overflow-x: hidden; */
+  /* flex-shrink: 1; */
 }
 .check-container {
-  padding-left: 8.7vw;
+  /* padding-left: 8.7vw; */
+  width: 30%;
+  height: 100%;
 }
 .check-btn {
   height: 65%;
@@ -97,16 +132,26 @@ body {
   padding: 10px;
   background-color: grey;
   color: white;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-family: "Press Start 2P";
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .score-container {
-  flex-direction: column;
-  padding-right: 90px;
+  position: relative;
+  flex-direction: row;
+  font-size: 0.8rem;
+  gap: 1.5vw;
+  /* padding-right: 90px; */
+}
+.score-container .highscore{
+ min-width: 10rem;
 }
 .again-container{
-    padding-right: 60px;
+    /* padding-right: 60px; */
+    width: 30%;
+    height: 100%;
 }
 .again-btn {
   height: 65%;
@@ -114,7 +159,7 @@ body {
   padding: 10px;
   background-color: grey;
   color: white;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-family: "Press Start 2P";
 }
 
@@ -151,3 +196,60 @@ body {
 .pop {
   animation: pop 0.4s ease;
 }
+
+@media (max-width: 480px) {
+
+  .header-container{
+    margin-top: 12vw;
+  }
+  .header{
+    padding: 5vw 3vw;
+    gap: 2.5vw;
+  }
+  .header:first-child{
+    font-size: 1rem;
+  }
+  .header .subheader{
+    font-size: 0.6rem;
+  }
+  .input-box{
+    width: 11rem;
+  }
+  .input-container {
+    flex-direction:column-reverse;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .message {
+
+    height: 15vw;
+    width: 90%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .secret-box {
+    font-size: 2rem;
+    width: 7rem;
+    height: 6rem;
+      box-shadow: 0px 8px 32px rgba(255,255,255,0.4);
+    border: 2px solid black;
+  }
+
+  .bottom-container {
+    margin-top: 3vw;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .score-container {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 7vw 7vw;
+  }
+}
+
+
+

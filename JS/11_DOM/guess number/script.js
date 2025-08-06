@@ -32,21 +32,24 @@
       let inputnum = Number(inputbox.value);
       // no input
       if (!inputnum) {
-        message.textContent = "please enter a number";
+        message.textContent = "Please enter a number";
       } else if (inputnum > 20 || inputnum < 0) {
         message.textContent = "Enter a number between 1 & 20";
       }
       // if number is higher
       else if (inputnum > number) {
-        wrongchoice.play();
         message.textContent = "📈 Too high...";
-        countScore();
-        inputbox.classList.remove("correct");
+        wrongchoice.pause();
+        wrongchoice.currentTime = 0;
+        wrongchoice.play();
+        inputbox.classList.remove("correct","wrong");
+        void inputbox.offsetWidth;  //reflow
         inputbox.classList.add("wrong");
+        countScore();
         if (score === 0) {
           inputbox.disabled = true;
           checkbtn.disabled = true;
-          message.textContent = "Game Over";
+          message.textContent = "⛔ Game Over";
           againbtn.style.backgroundColor = "red";
           loseaudio.play();
         }
@@ -54,34 +57,41 @@
       // if number is lower
       else if (inputnum < number) {
         message.textContent = "📉 Too low...";
+        wrongchoice.pause();
+        wrongchoice.currentTime =0;
         wrongchoice.play();
-        countScore();
-        inputbox.classList.remove("correct");
+        inputbox.classList.remove("correct", "wrong");
+        void inputbox.offsetWidth;  // reflow
         inputbox.classList.add("wrong");
+        countScore();
         if (score === 0) {
           inputbox.disabled = true;
           checkbtn.disabled = true;
           message.textContent = "⛔ Game Over";
+
           loseaudio.play();
-          againbtn.style.backgroundColor = "red";
+          againbtn.style.backgroundColor = "#da0a0aff";
         }
       }
       // number is equal
       else if (inputnum === number) {
         secretbox.textContent = number;
-        message.style.fontSize = "18px";
-        message.textContent = "🥳 Correct guess...";
+        message.textContent = "Correct guess...🥳";
+        message.style.fontSize = "16px";
         winaudio.play();
         checkbtn.disabled = true;
         inputbox.disabled = true;
+        message.style.backgroundColor = 'rgba(0, 0, 0, 0.34)';
         document.querySelector("body").style.backgroundColor = "#60b346";
+        document.querySelector('.header').style.backgroundColor = 'rgba(0, 0, 0, 0.553)';
+        againbtn.style.backgroundColor ='rgba(0, 0, 0, 0.55)';
         updateHighScore();
         inputbox.classList.remove("wrong");
         inputbox.classList.add("correct");
         secretbox.classList.add("pop");
         setTimeout(() => inputbox.classList.remove("wrong"), 400);
       }
-      setTimeout(() => secretBox.classList.remove("pop"), 600);
+      setTimeout(() => secretbox.classList.remove("pop"), 600);
     });
     // setting timeout for the wrong class
 
@@ -89,7 +99,8 @@
     againbtn.addEventListener("click", () => {
       document.querySelector("body").style.backgroundColor = "";
       number = secretNumber();
-      message.textContent = "🤔 Start Guessing...?";
+      message.style.fontSize = '0.8rem';
+      message.textContent = "Start guessing...🤔";
       score = 20;
       countscore.textContent = `Score: ${score}`;
       inputbox.value = "";
@@ -99,13 +110,15 @@
       secretbox.textContent = "?";
       inputbox.classList.remove("wrong");
       inputbox.classList.remove("correct");
+       document.querySelector('.header').style.backgroundColor = '';
+       message.style.backgroundColor = '';
     });
 
     let highscoreValue = 0;
     function updateHighScore() {
       if (score > highscoreValue) {
         highscoreValue = score;
-        highscore.textContent = `High Score: ${highscoreValue}`;
+        highscore.textContent = `HighScore: ${highscoreValue}`;
       }
     }
 
@@ -123,5 +136,3 @@
         checkbtn.click();
       }
     });
-
-    const okay = document.querySelector();
